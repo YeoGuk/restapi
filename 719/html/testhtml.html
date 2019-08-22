@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <form ref='uploadForm' 
+      id='uploadForm' 
+      action='http://localhost:3000/upload' 
+      method='POST' 
+      encType="multipart/form-data">
+        <input type="file" name="sampleFile" />
+        <input type="text" name="accessToken" />
+        
+        <input type='submit' value='Upload!' />
+    </form>
+    <form ref='selectForm' 
+      id='selectForm' 
+      action='http://localhost:3000/select' 
+      method='POST' 
+      encType="multipart/form-data">
+        <input type="text" name="uuid" />
+        <input type='submit' value='select!' />
+    </form>     
+  </body>
+</html>
